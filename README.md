@@ -10,10 +10,10 @@ From [link.tree](https://linktr.ee/):
 
 So obviously for this project you will need:
 
-- multiple destination where you want to send your followers, it might include: LinkedIn profile, Facebook profile, Instagram profile(s), personal blog, web store, latest youtube video etc.
-- develop it in Flask
-- read the content dynamically via a yaml file (links.yaml)
-- generate the buttons with the correct href to *redirect*
+- [x] multiple destination where you want to send your followers, it might include: LinkedIn profile, Facebook profile, Instagram profile(s), personal blog, web store, latest youtube video etc.
+- [x] develop it in Flask
+- [x] read the content dynamically via a yaml file (links.yaml)
+- [x] generate the buttons with the correct href to *redirect*
 
 
 
@@ -79,13 +79,13 @@ See you can add any style to your own project. These are only ideas.
 
 # Requirements
 
-- [ ] **FORK** THIS REPO!
-- [ ] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
-- [ ] Project MUST compile
+- [x] **FORK** THIS REPO!
+- [x] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
+- [x] Project MUST compile
 - [ ] Update README.md to add a section `Usage`, where you will place the commands in order to run your bio.py
-- [ ] Add Style, suggestions "bootstrap.css"
+- [x] Add Style, suggestions "bootstrap.css"
 - [ ] Deliver it via `git tags`
-- [ ] Make sure to use/develop/fill the empty files/folders provided: `static/`, `templates/`, `bio.py` , `requirements.txt`.
+- [x] Make sure to use/develop/fill the empty files/folders provided: `static/`, `templates/`, `bio.py` , `requirements.txt`.
 
 
 # Usage
@@ -94,12 +94,12 @@ See you can add any style to your own project. These are only ideas.
 
 
 # Extras:
-- You can **add** any other attribute you like in order to add more functionalities.
-- Create a "timer" per link, in a new attribute called `until` you will put a date `2019/9/30 20:30:00` which will mean that this specific link will only appear until that date, and after that date it will disappear.
-- Deploy this to real life (AWS lambda, Google Cloud Functions, Heroku)
-- Add CI/CD
-- Modularize it
-- Create a `POST` endpoint `/link` (ideally with basic-auth) that will allow you to create a new link given a JSON request data.
+- [ ] You can **add** any other attribute you like in order to add more functionalities.
+- [ ] Create a "timer" per link, in a new attribute called `until` you will put a date `2019/9/30 20:30:00` which will mean that this specific link will only appear until that date, and after that date it will disappear.
+- [ ] Deploy this to real life (AWS lambda, Google Cloud Functions, Heroku)
+- [ ] Add CI/CD
+- [x] Modularize it
+- [ ] Create a `POST` endpoint `/link` (ideally with basic-auth) that will allow you to create a new link given a JSON request data.
 
 ```bash
 curl -d @link.json -X POST  \
