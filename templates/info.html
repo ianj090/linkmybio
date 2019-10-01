@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Información</title>
+{% endblock %}
+
+{% block info %}
+<div>
+  <img src= {{ imagen }} style = "width:10vw;"border:10; class = "center"></img>
+  <div class="container">
+    <h4 style="font-size:5vw"><center><b>{{ nombre }}</b></center></h4>
+    <p style="font-size:1.8vw"><center>{{ short_bio }}</center></p>
+  </div>
+  <div>
+    <form action = "{{ fb_link }}">
+      <button class = "center" type = "submit" style = background-color:#008CBA;>{{ fb_description }}</button>
+    </form>
+  </div>
+  <div>
+      <form action = "{{ ig_link }}">
+        <button class = "center" type = "submit" style = background-color:#f44336;>{{ ig_description }}</button>
+      </form>
+    </div>
+</div>
+{% endblock %}
