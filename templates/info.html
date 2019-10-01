@@ -6,20 +6,52 @@
 
 {% block info %}
 <div>
-  <img src= {{ imagen }} style = "width:10vw;"border:10; class = "center"></img>
+  <img src= {{ imagen }} style = "width:30vw; height:30vw"; class = "center"></img>
   <div class="container">
     <h4 style="font-size:5vw"><center><b>{{ nombre }}</b></center></h4>
-    <p style="font-size:1.8vw"><center>{{ short_bio }}</center></p>
+    <h6 style="font-size:2vw"><center>{{ short_bio }}</center></h6>
   </div>
   <div>
-    <form action = "{{ fb_link }}">
-      <button class = "center" type = "submit" style = background-color:#008CBA;>{{ fb_description }}</button>
-    </form>
-  </div>
-  <div>
-      <form action = "{{ ig_link }}">
-        <button class = "center" type = "submit" style = background-color:#f44336;>{{ ig_description }}</button>
+    {%- if fb_enable is sameas True %}
+      <form action = "{{ fb_link }}">
+        <button class = "center button1" type = "submit">{{ fb_description }}</button>
       </form>
+    {%- endif %}
+  </div>
+  <div>
+    {%- if ig_enable is sameas True %}
+      <form action = "{{ ig_link }}">
+        <button class = "center button2" type = "submit">{{ ig_description }}</button>
+      </form>
+    {%- endif %}
+  </div>
+  <div>
+      {%- if bg_enable is sameas True %}
+        <form action = "{{ bg_link }}">
+          <button class = "center button3" type = "submit">{{ bg_description }}</button>
+        </form>
+      {%- endif %}
     </div>
+  <div>
+    {%- if gh_enable is sameas True %}
+      <form action = "{{ gh_link }}">
+        <button class = "center button4" type = "submit">{{ gh_description }}</button>
+      </form>
+    {%- endif %}
+  </div>
+  <div>
+    {%- if yt_enable is sameas True %}
+      <form action = "{{ yt_link }}">
+        <button class = "center button5" type = "submit">{{ yt_description }}</button>
+      </form>
+    {%- endif %}
+  </div>
+  <div>
+    {%- if al_enable is sameas True %}
+      <form action = "{{ gh_link }}">
+        <button class = "center button6" type = "submit">{{ al_description }}</button>
+      </form>
+    {%- endif %}
+  </div>
 </div>
 {% endblock %}
