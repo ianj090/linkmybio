@@ -1,0 +1,21 @@
+nombre: Ian Jenatz
+short_bio: Bla Bla Bla
+imagen: "static/young_me.jpg"
+
+links:
+    - facebook:
+        enable: True
+        link: "https://www.facebook.com/ian.jenatz.16"
+        description: "Check Out My Facebook"
+    - instagram:
+        enable: True
+        link: "https://www.instagram.com/ianj090/"
+        description: "Check Out My Instagram"
+    - blog:
+        enable: False
+        link: "lorem ipsum"
+        description: "lorem ipsum dorem"
+    - etc:
+        enable: False
+        link: "http://etc.etc"
+        description: "any other link you want your followers to see"
