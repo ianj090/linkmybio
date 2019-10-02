@@ -12,45 +12,57 @@
     <h6 style="font-size:2vw"><center>{{ short_bio }}</center></h6>
   </div>
   <div>
-    {%- if fb_enable is sameas True %}
-      <form action = "{{ fb_link }}">
-        <button class = "center button1" type = "submit">{{ fb_description }}</button>
-      </form>
+    {%- if date < fb_timer %}
+      {%- if fb_enable is sameas True %}
+        <form action = "{{ fb_link }}">
+          <button class = "center button1" type = "submit">{{ fb_description }}</button>
+        </form>
+      {%- endif %}
     {%- endif %}
   </div>
   <div>
-    {%- if ig_enable is sameas True %}
-      <form action = "{{ ig_link }}">
-        <button class = "center button2" type = "submit">{{ ig_description }}</button>
-      </form>
+    {%- if date < ig_timer %}
+      {%- if ig_enable is sameas True %}
+        <form action = "{{ ig_link }}">
+          <button class = "center button2" type = "submit">{{ ig_description }}</button>
+        </form>
+      {%- endif %}
     {%- endif %}
   </div>
   <div>
+    {%- if date < bg_timer %}
       {%- if bg_enable is sameas True %}
         <form action = "{{ bg_link }}">
           <button class = "center button3" type = "submit">{{ bg_description }}</button>
         </form>
       {%- endif %}
+    {%- endif %}
     </div>
   <div>
-    {%- if gh_enable is sameas True %}
-      <form action = "{{ gh_link }}">
-        <button class = "center button4" type = "submit">{{ gh_description }}</button>
-      </form>
+    {%- if date < gh_timer %}
+      {%- if gh_enable is sameas True %}
+        <form action = "{{ gh_link }}">
+          <button class = "center button4" type = "submit">{{ gh_description }}</button>
+        </form>
+      {%- endif %}
     {%- endif %}
   </div>
   <div>
-    {%- if yt_enable is sameas True %}
-      <form action = "{{ yt_link }}">
-        <button class = "center button5" type = "submit">{{ yt_description }}</button>
-      </form>
+    {%- if date < yt_timer %}
+      {%- if yt_enable is sameas True %}
+        <form action = "{{ yt_link }}">
+          <button class = "center button5" type = "submit">{{ yt_description }}</button>
+        </form>
+      {%- endif %}
     {%- endif %}
   </div>
   <div>
-    {%- if al_enable is sameas True %}
-      <form action = "{{ gh_link }}">
-        <button class = "center button6" type = "submit">{{ al_description }}</button>
-      </form>
+    {%- if date < al_timer %}
+      {%- if al_enable is sameas True %}
+        <form action = "{{ gh_link }}">
+          <button class = "center button6" type = "submit">{{ al_description }}</button>
+        </form>
+      {%- endif %}
     {%- endif %}
   </div>
 </div>
