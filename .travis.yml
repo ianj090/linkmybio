@@ -1,2 +1,2 @@
 language: python
-script: make test
+script: python bio.py
