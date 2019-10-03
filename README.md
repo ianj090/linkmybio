@@ -90,14 +90,14 @@ See you can add any style to your own project. These are only ideas.
 
 # Usage
 
-> put your code here
+python bio.py
 
 
 # Extras:
 - [x] You can **add** any other attribute you like in order to add more functionalities.
 - [x] Create a "timer" per link, in a new attribute called `until` you will put a date `2019/9/30 20:30:00` which will mean that this specific link will only appear until that date, and after that date it will disappear.
-- [ ] Deploy this to real life (AWS lambda, Google Cloud Functions, Heroku)
-- [x] Add CI/CD 
+- [x] Deploy this to real life (AWS lambda, Google Cloud Functions, Heroku) (Not sure if it is working)
+- [x] Add CI/CD (Not sure if it is working)
 - [x] Modularize it
 - [ ] Create a `POST` endpoint `/link` (ideally with basic-auth) that will allow you to create a new link given a JSON request data.
 
