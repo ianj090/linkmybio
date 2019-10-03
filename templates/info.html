@@ -4,12 +4,37 @@
 <title>Información</title>
 {% endblock %}
 
+{% block fb_background %}
+{{ fb_background }}
+{% endblock %}
+
+{% block ig_background %}
+{{ ig_background }}
+{% endblock %}
+
+{% block bl_background %}
+{{ bl_background }}
+{% endblock %}
+
+{% block gh_background %}
+{{ gh_background }}
+{% endblock %}
+
+{% block yt_background %}
+{{ yt_background }}
+{% endblock %}
+
+{% block rd_background %}
+{{ rd_background }}
+{% endblock %}
+
 {% block info %}
 <div>
   <img src= {{ imagen }} style = "width:30vw; height:30vw"; class = "center"></img>
   <div class="container">
     <h4 style="font-size:5vw"><center><b>{{ nombre }}</b></center></h4>
     <h6 style="font-size:2vw"><center>{{ short_bio }}</center></h6>
+    <h6 style="font-size:2vw"><center>{{ short_bio2 }}</center></h6>
   </div>
   <div>
     {%- if date < fb_timer %}
@@ -57,10 +82,10 @@
     {%- endif %}
   </div>
   <div>
-    {%- if date < al_timer %}
-      {%- if al_enable is sameas True %}
-        <form action = "{{ gh_link }}">
-          <button class = "center button6" type = "submit">{{ al_description }}</button>
+    {%- if date < rd_timer %}
+      {%- if rd_enable is sameas True %}
+        <form action = "{{ rd_link }}">
+          <button class = "center button6" type = "submit">{{ rd_description }}</button>
         </form>
       {%- endif %}
     {%- endif %}
