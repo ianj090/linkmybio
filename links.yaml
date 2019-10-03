@@ -1,5 +1,6 @@
 nombre: Ian Jenatz
-short_bio: suh dudz
+short_bio: Estudiante de Computer Science, 19
+short_bio2: Im a cupcake in search for her stud muffin
 imagen: "static/young_me4.jpg"
 
 links:
@@ -8,28 +9,34 @@ links:
         link: "https://www.facebook.com/ian.jenatz.16"
         description: "Check Out My Facebook"
         until: "2019/9/30 20:30:00"
+        background: "#008CBA"
     - instagram:
         enable: True
         link: "https://www.instagram.com/ianj090/"
         description: "Follow Me On Instagram"
         until: "2019/9/30 20:30:00"
+        background: "#ffa500"
     - blog:
         enable: False
-        link: "lorem ipsum"
+        link: "https://www.google.com"
         description: "Check Out My Blog"
         until: "2019/9/30 20:30:00"
+        background: "#4CAF50"
     - github:
         enable: True
         link: "https://github.com/ianj090"
         description: "Check Out My Projects On Github"
         until: "2019/9/30 20:30:00"
+        background: "#4CAF50"
     - youtube:
         enable: True
         link: "https://www.youtube.com/channel/UChmdZFKocDyafDHeUKUZO3Q?view_as=subscriber"
         description: "Subscribe To My Youtube Channel"
         until: "2019/9/30 20:30:00"
-    - algo:
+        background: "#f44336"
+    - random:
         enable: True
-        link: "https://www.youtube.com/channel/UChmdZFKocDyafDHeUKUZO3Q?view_as=subscriber"
-        description: "Check Out Something Else"
+        link: "http://www.staggeringbeauty.com/"
+        description: "Check Out Something Random"
         until: "2019/9/30 20:30:00"
+        background: "#990000"
