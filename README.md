@@ -92,7 +92,7 @@ See you can add any style to your own project. These are only ideas.
 
 python bio.py
 
-Travis-CI: https://travis-ci.com/ianj090/linkmybio/jobs/241701232 
+Travis-CI: https://travis-ci.com/ianj090/linkmybio/jobs/241701232
 Heroku website: https://pacific-peak-83154.herokuapp.com/
 
 
